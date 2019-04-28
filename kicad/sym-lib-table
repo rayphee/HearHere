@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Driver_Motor)(type Legacy)(uri ${KIPRJMOD}/Driver_Motor.lib)(options "")(descr ""))
+  (lib (name Timer)(type Legacy)(uri ${KIPRJMOD}/Timer.lib)(options "")(descr ""))
+)

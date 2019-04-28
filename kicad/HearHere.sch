@@ -1,0 +1,166 @@
+EESchema Schematic File Version 4
+LIBS:HearHere-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer:LM555 U?
+U 1 1 5CB8E6AF
+P 5000 3250
+F 0 "U?" H 5000 3831 50  0000 C CNN
+F 1 "LM555" H 5000 3740 50  0000 C CNN
+F 2 "" H 5000 3250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_Motor:L293 U?
+U 1 1 5CB9082D
+P 7250 3100
+F 0 "U?" H 7250 4281 50  0000 C CNN
+F 1 "L293" H 7250 4190 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 7500 2350 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 6950 3800 50  0001 C CNN
+	1    7250 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CB94AC4
+P 7250 4050
+F 0 "#PWR?" H 7250 3800 50  0001 C CNN
+F 1 "GND" H 7255 3877 50  0000 C CNN
+F 2 "" H 7250 4050 50  0001 C CNN
+F 3 "" H 7250 4050 50  0001 C CNN
+	1    7250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3900 7450 4050
+Wire Wire Line
+	7450 4050 7350 4050
+Wire Wire Line
+	7350 3900 7350 4050
+Connection ~ 7350 4050
+Wire Wire Line
+	7350 4050 7250 4050
+Wire Wire Line
+	7150 3900 7150 4050
+Connection ~ 7150 4050
+Wire Wire Line
+	7150 4050 7050 4050
+Wire Wire Line
+	7050 3900 7050 4050
+Connection ~ 7050 4050
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB95EF2
+P 5000 2400
+F 0 "#PWR?" H 5000 2250 50  0001 C CNN
+F 1 "+5V" H 5015 2573 50  0000 C CNN
+F 2 "" H 5000 2400 50  0001 C CNN
+F 3 "" H 5000 2400 50  0001 C CNN
+	1    5000 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CB97A10
+P 7150 1750
+F 0 "#PWR?" H 7150 1600 50  0001 C CNN
+F 1 "+5V" H 7165 1923 50  0000 C CNN
+F 2 "" H 7150 1750 50  0001 C CNN
+F 3 "" H 7150 1750 50  0001 C CNN
+	1    7150 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 2100 7150 1750
+Wire Wire Line
+	5000 2850 5000 2400
+Wire Wire Line
+	5500 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 2500
+Wire Wire Line
+	6050 2500 6750 2500
+$Comp
+L power:+BATT #PWR?
+U 1 1 5CBE08A6
+P 7350 1750
+F 0 "#PWR?" H 7350 1600 50  0001 C CNN
+F 1 "+BATT" H 7365 1923 50  0000 C CNN
+F 2 "" H 7350 1750 50  0001 C CNN
+F 3 "" H 7350 1750 50  0001 C CNN
+	1    7350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1750 7350 2100
+$Comp
+L power:+5V #PWR?
+U 1 1 5CBE25ED
+P 6550 2900
+F 0 "#PWR?" H 6550 2750 50  0001 C CNN
+F 1 "+5V" V 6565 3028 50  0000 L CNN
+F 2 "" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6550 2900 6750 2900
+Wire Wire Line
+	6750 3100 6650 3100
+Wire Wire Line
+	6650 3100 6650 3300
+$Comp
+L Device:R R?
+U 1 1 5CC0A036
+P 5700 3500
+F 0 "R?" H 5770 3546 50  0000 L CNN
+F 1 "R" H 5770 3455 50  0000 L CNN
+F 2 "" V 5630 3500 50  0001 C CNN
+F 3 "~" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4050 7050 4050
+Wire Wire Line
+	6650 3300 6750 3300
+Connection ~ 6650 3300
+Wire Wire Line
+	6650 3300 6650 3500
+Wire Wire Line
+	6750 3500 6650 3500
+Connection ~ 6650 3500
+Wire Wire Line
+	6650 3500 6650 4050
+Connection ~ 7250 4050
+Wire Wire Line
+	7250 4050 7150 4050
+$Comp
+L power:GND #PWR?
+U 1 1 5CC0DE71
+P 5000 3600
+F 0 "#PWR?" H 5000 3350 50  0001 C CNN
+F 1 "GND" H 5005 3427 50  0000 C CNN
+F 2 "" H 5000 3600 50  0001 C CNN
+F 3 "" H 5000 3600 50  0001 C CNN
+	1    5000 3600
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
